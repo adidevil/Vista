@@ -174,20 +174,7 @@ def demo_video():
 			print(img_name)
 			detection_tiny(os.path.join(file_path,img_name),os.path.join(result_path,img_name),clusters, averageImage)
 
-if __name__=="__main__":
-    t1=time.time()
-    ans = []
-    o = "C:/Users/L3IN/Downloads/mxnet-finding-tiny-face-master/data/images"
-    files = [f for f in os.listdir(o) if os.path.isfile(os.path.join(o, f))]
-    demo_video()
-    t2=time.time()
-    print ("total time is ",t2-t1,"secs.")
-    print(ans)
-    sub = pd.DataFrame({
-        'Name' : files,
-        'HeadCount' : ans
-    })
-    sub[['Name','HeadCount']].to_csv('C:/Users/L3IN/Downloads/vista18/sub3.csv', index=False)
+
 	
 	#can add some new features 
 	#or also can be done by YOLO
