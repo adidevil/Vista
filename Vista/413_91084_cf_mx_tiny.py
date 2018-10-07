@@ -188,6 +188,9 @@ if __name__=="__main__":
         'HeadCount' : ans
     })
     sub[['Name','HeadCount']].to_csv('C:/Users/L3IN/Downloads/vista18/sub3.csv', index=False)
+	
+	#can add some new features 
+	#or also can be done by YOLO
 
 
 
